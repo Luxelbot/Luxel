@@ -31,7 +31,7 @@ client.on("guildMemberAdd" ,member => {
     .setAuthor("Hoşgeldin " + member.user.username, client.user.avatarURL)
     .setThumbnail(member.user.avatarURL)
     .addField("Sunucu Sayısı", member.guild.members.size, true)
-    .addField("Verilen Rol", rol.name, true);
+    .addField("Verilen Rol", ">>>| --- Üye --- |<<<", true);
     
     kanal.send(embed);
 });
