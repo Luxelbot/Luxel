@@ -52,21 +52,9 @@ client.on("guildMemberRemove" ,member => {
     kanal.send(embed);
 });
 
-client.on("ready", () => { // 
-  console.log(`Logged in as ${client.user.tag}!`);
-});
 
-client.on("message", message => {
-    if (message.content.startsWith("l!kick")) {
-        var member = message.mentions.members.first();
-        member.kick()
-        .then(() => {
-            message.channel.send(":wave: " + member.displayName + " Başarılı Şekilde Atılmıştır! :point_right: ");
-        }).catch(() => {
-            message.channel.send("Yetkiniz Yok! ");
-        });
-    }
-});
+
+
 
   
 let prefix = ayar.prefix;
