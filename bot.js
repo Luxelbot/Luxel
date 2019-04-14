@@ -24,14 +24,17 @@ client.on("guildMemberAdd" ,member => {
     let kanal = member.guild.channels.find(ch => ch.name === "🚧╟≿𝙶elen-𝙶iden");
     if(!kanal) return console.log("gelen adında kanal bulunamadı"); // kanal yok ise
     
-    let rol = member.guild.roles.get("567047004182544385");
+    let rol = member.guild.roles.find(rol => rol.name === ">>>| --- Üye --- |<<<");
+    if(!rol) return console.log("üye adlı rol bulunamadı!");
+    
     member.addRole(rol).catch(console.error);
+    
     let embed = new Discord.RichEmbed()
     .setColor("RANDOM")
     .setAuthor("Hoşgeldin " + member.user.username, client.user.avatarURL)
     .setThumbnail(member.user.avatarURL)
     .addField("Sunucu Sayısı", member.guild.members.size, true)
-    .addField("Verilen Rol", ">>>| --- Üye --- |<<<", true);
+    .addField("Verilen Rol", rol.name, true);
     
     kanal.send(embed);
 });
