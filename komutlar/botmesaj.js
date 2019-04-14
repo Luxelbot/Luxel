@@ -8,7 +8,7 @@ module.exports.run = async (client, msg, args) => {
 
     msg.guild.members.forEach(function(uyeler) {
         let embed = new Discord.RichEmbed()
-        .setTitle("Dm Özel Mesaj")
+        .setTitle("Luxel Özel Mesaj!")
         .setColor("RANDOM")
         .addField("Mesaj İçeriği", mesaj, true)
         .setFooter(client.user.username, client.user.avatarURL)
