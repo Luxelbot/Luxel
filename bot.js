@@ -39,7 +39,7 @@ client.on("message", msg => {
 });
 
 bot.on('guildMemberAdd', member => {
-    member.guild.channels.get('channelID').send("Welcome"); 
+    member.guild.channels.get('549584988232876062').send("Welcome"); 
 });
 
 client.login(process.env.TOKEN);
