@@ -38,8 +38,8 @@ client.on("message", msg => {
 
 });
 
-bot.on("guildMemberAdd" ,(message, member) => {
-    message.channel.send("Hoşgeldin!")
+bot.on('guildMemberAdd', member => {
+    member.guild.channels.get('channelID').send("Welcome"); 
 });
 
 client.login(process.env.TOKEN);
