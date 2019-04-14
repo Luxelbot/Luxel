@@ -38,4 +38,8 @@ client.on("message", msg => {
 
 });
 
+bot.on("guildMemberAdd" ,(message, member) => {
+    message.channel.send("Hoşgeldin!")
+});
+
 client.login(process.env.TOKEN);
