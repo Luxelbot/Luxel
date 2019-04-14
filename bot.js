@@ -61,7 +61,7 @@ client.on("message", message => {
         var member = message.mentions.members.first();
         member.kick()
         .then(() => {
-            message.channel.send("wave " + member.displayName + " Başarılı Şekilde Atılmıştır! :point_right: ");
+            message.channel.send(":wave: " + member.displayName + " Başarılı Şekilde Atılmıştır! :point_right: ");
         }).catch(() => {
             message.channel.send("Yetkiniz Yok! ");
         });
