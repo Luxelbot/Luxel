@@ -24,7 +24,7 @@ client.on("guildMemberAdd" ,member => {
     let kanal = member.guild.channels.find(ch => ch.name === "🚧╟≿𝙶elen-𝙶iden");
     if(!kanal) return console.log("gelen adında kanal bulunamadı"); // kanal yok ise
     
-    let rol = member.guild.roles.find(rol => rol.name === ">>>| --- Üye --- |<<<");
+    let rol = member.guild.roles.get("567047004182544385");
     member.addRole(rol).catch(console.error);
     let embed = new Discord.RichEmbed()
     .setColor("RANDOM")
