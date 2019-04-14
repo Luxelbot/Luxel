@@ -20,6 +20,10 @@ client.commands = new Discord.Collection();
         });
     });
 
+client.on("guildMemberAdd" ,(message, member) => {
+    message.channel.send("Welcome")
+});
+
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
