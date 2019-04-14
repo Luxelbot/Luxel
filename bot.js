@@ -38,6 +38,9 @@ client.on("message", msg => {
 
 });
 
+client.login(process.env.TOKEN); // prefix.token
+
+
 client.on('guildMemberAdd', msg => { // Commands Go Inside The client.on('message', 
 msg => )
 msg.guild.channels.get('549584589107232791').send({embed: {
