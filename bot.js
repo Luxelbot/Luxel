@@ -23,7 +23,7 @@ client.commands = new Discord.Collection();
 client.on("guildMemberAdd" ,member => {
     let kanal = member.guild.channels.find(ch => ch.name === "gelen");
     if(!kanal) return console.log("gelen adında kanal bulunamadı"); // kanal yok ise
-    kanal.send(member.user.tag + member.guild.name +" Sunucumuza hoşgeldin!");
+    kanal.send(`${member.guild.name} adlı sunucumuza Hoşgeldin ${member.user.tag} seninle beraber ${member.guild.members.size} kişi olduk!`);
 });
 
 client.on("guildMemberRemove" ,member => {
