@@ -1,10 +1,16 @@
 const Discord = require("discord.js");
-  
+
 module.exports.run = async (client, msg, args) => {
 
-let messagecount = parseInt(numberofmessages);
-message.channel.fetchMessages({ limit: messagecount })
-.then(messages => message.channel.bulkDelete(messages));
+    let miktar = args.join(" ");
+
+    if (!msg.member.hasPermission("MANAGE_MESSAGES")){
+        return msg.reply("Bu komutu kullanmak için gerekli izine sahip değilsin!");
+    }else{
+        msg.channel.bulkDelete(miktar).then(() => {
+            msg.channel.send("`" + miktar + "` tane mesaj silindi!").then(msg => msg.delete(3000));
+        });
+    }
 
 }
 
