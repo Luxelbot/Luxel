@@ -20,7 +20,7 @@ exports.conf = {
 };
 
 exports.help = {
-  komut: 'kick',
+  name: 'kick',
   description: 'İstediğiniz kişiyi sunucudan atar.',
   usage: 'l!kick [kullanıcı] [sebep]'
 };
