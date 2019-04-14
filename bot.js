@@ -38,7 +38,7 @@ client.on("message", msg => {
 
 });
 
-bot.on('guildMemberAdd', member => {
+client.on('guildMemberAdd', member => {
     member.guild.channels.get('549584988232876062').send("Welcome"); 
 });
 
