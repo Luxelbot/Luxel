@@ -20,11 +20,19 @@ client.commands = new Discord.Collection();
         });
     });
 
-client.on("guildMemberAdd" ,(message, member) => {
-    message.channel.send("Welcome")
+client.on("guildMemberAdd" ,(msg, member) => {
+    let kanal = member.guild.channels.find(ch => ch.name === "gelen");
+    if(!kanal) return msg.author.send("gelen adında bir kanal oluşturmalısın!");
+    kanal.send(member.user.tag + member.guild.name +" Sunucumuza hoşgeldin!");
 });
 
-client.on("ready", () => {
+client.on("guildMemberRemove" ,(msg, member) => {
+    let kanal = member.guild.channels.find(ch => ch.name === "giden"); // kanal arama
+    if(!kanal) return msg.author.send("giden adında bir kanal oluşturmalısın!"); // kanal yok ise
+    kanal.send(member.user.tag + " Sunucumuzdan çıkış yaptı!");
+});
+
+client.on("ready", () => { // 
   console.log(`Logged in as ${client.user.tag}!`);
 });
   
