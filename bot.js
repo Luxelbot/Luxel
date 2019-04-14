@@ -22,13 +22,13 @@ client.commands = new Discord.Collection();
 
 client.on("guildMemberAdd" ,(msg, member) => {
     let kanal = member.guild.channels.find(ch => ch.name === "gelen");
-    if(!kanal) return msg.author.send("gelen adında bir kanal oluşturmalısın!");
+    if(!kanal) return console.log("gelen adında kanal bulunamadı"); // kanal yok ise
     kanal.send(member.user.tag + member.guild.name +" Sunucumuza hoşgeldin!");
 });
 
 client.on("guildMemberRemove" ,(msg, member) => {
     let kanal = member.guild.channels.find(ch => ch.name === "giden"); // kanal arama
-    if(!kanal) return msg.author.send("giden adında bir kanal oluşturmalısın!"); // kanal yok ise
+    if(!kanal) return console.log("giden adında kanal bulunamadı"); // kanal yok ise
     kanal.send(member.user.tag + " Sunucumuzdan çıkış yaptı!");
 });
 
