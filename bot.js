@@ -57,7 +57,7 @@ client.on("ready", () => { //
 });
 
 client.on("message", (message) => {
-    if (message.content.startsWith("at")) {
+    if (message.content.startsWith("/kick")) {
         // Easy way to get member object though mentions.
         var member= message.mentions.members.first();
         // Kick
