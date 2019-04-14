@@ -45,7 +45,7 @@ client.on("guildMemberRemove" ,member => {
     
     let embed = new Discord.RichEmbed()
     .setColor("RANDOM")
-    .setAuthor("Hoşgeldin " + member.user.username, client.user.avatarURL)
+    .setAuthor("Görüşürüz " + member.user.username, client.user.avatarURL)
     .setThumbnail(member.user.avatarURL)
     .addField("Sunucu Sayısı", member.guild.members.size, true)
     
