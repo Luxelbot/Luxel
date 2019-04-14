@@ -10,7 +10,7 @@ module.exports.run = async (client, msg, args) => {
         let embed = new Discord.RichEmbed()
         .setTitle("Luxel Özel Mesaj!")
         .setColor("RANDOM")
-        .addField("Mesaj İçeriği", mesaj, true)
+        .addField("mesaj, true)
         .setFooter(client.user.username, client.user.avatarURL)
         .setTimestamp();
         uyeler.user.send(embed);
