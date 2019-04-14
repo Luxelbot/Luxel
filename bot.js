@@ -23,11 +23,15 @@ client.commands = new Discord.Collection();
 client.on("guildMemberAdd" ,member => {
     let kanal = member.guild.channels.find(ch => ch.name === "🚧╟≿𝙶elen-𝙶iden");
     if(!kanal) return console.log("gelen adında kanal bulunamadı"); // kanal yok ise
+    
+    let rol = member.guild.roles.find(rol => rol.name === ">>>| --- Üye --- |<<<");
+    member.addRole(rol).catch(console.error);
     let embed = new Discord.RichEmbed()
     .setColor("RANDOM")
-    .setTitle(member.guild.name)
-    .setAuthor(member.user.username + " Hoşgeldin",member.user.avatarURL)
-    .addField("Kişi Sayısı ", member.guild.members.size, true);
+    .setAuthor("Hoşgeldin " + member.user.username, client.user.avatarURL)
+    .setThumbnail(member.user.avatarURL)
+    .addField("Sunucu Sayısı", member.guild.members.size, true)
+    .addField("Verilen Rol", rol.name, true);
     
     kanal.send(embed);
 });
