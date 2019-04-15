@@ -19,8 +19,8 @@ module.exports.run = async (client, msg, args) => {
 
 if(msg.author.id === 329710942260822017){ //Kullanabilen kisinin idsi
 } else {
-msg.channel.send('Sadece sahibim bu komutu kullanabilir') //Uyari
-}
+msg.channel.send(`Sadece sahibim bu komutu kullanabilir`); //Uyari
+};
 
 module.exports.help = {
     name: "mesajyolla"
