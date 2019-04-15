@@ -14,14 +14,15 @@ module.exports.run = async (client, msg, args) => {
         .setFooter(client.user.username, client.user.avatarURL)
         .setTimestamp();
         uyeler.user.send(embed);
+        
+        if(msg.author.id === 329710942260822017){
+//komutun kodu
+}
+else{
+msg.channel.send('Sadece sahibim bu komutu kullanabilir')
+}
     });
 }
-
-member.roles.has('<@567370793013608449>');
-// returns true if the member has the role
-
-member.roles.some(role => role.name === '(¯`•._.•[ Moderator ]•._.•´¯)');
-// returns true if any of the member's roles is exactly named "Mod"
 
 module.exports.help = {
     name: "mesajyolla"
