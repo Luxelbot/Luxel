@@ -55,6 +55,11 @@ client.on("guildMemberRemove" ,member => {
 
 
 
+client.on('message', msg => {
+  if (msg.content === 'sa') {
+    msg.reply('Aleyküm Selam. Hoşgeldin!');
+  }
+});
 
   
 let prefix = ayar.prefix;
