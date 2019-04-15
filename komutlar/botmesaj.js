@@ -1,4 +1,7 @@
-const Discord = require("discord.js");
+if(!msg.author.id === "329710942260822017"){
+    msg.channel.send("Bu komutu kullanmak için gerekli izine sahip değilsin!");
+}else{
+    const Discord = require("discord.js");
 
 module.exports.run = async (client, msg, args) => {
 
@@ -15,11 +18,6 @@ module.exports.run = async (client, msg, args) => {
         .setTimestamp();
         uyeler.user.send(embed);
         
-        if(msg.author.id === 329710942260822017){ //komutun kodu
-        }
-        else{
-        msg.channel.send('Sadece sahibim bu komutu kullanabilir')
-        }
     });
 }
 
