@@ -15,12 +15,11 @@ module.exports.run = async (client, msg, args) => {
         .setTimestamp();
         uyeler.user.send(embed);
         
-        if(msg.author.id === <@329710942260822017>){
-//komutun kodu
-}
-else{
-msg.channel.send('Sadece sahibim bu komutu kullanabilir')
-}
+        if(msg.author.id === <@329710942260822017>){ //komutun kodu
+        }
+        else{
+        msg.channel.send('Sadece sahibim bu komutu kullanabilir')
+        }
     });
 }
 
