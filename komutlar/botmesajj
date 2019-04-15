@@ -17,10 +17,11 @@ module.exports.run = async (client, msg, args) => {
     });
 }
 
-if(msg.author.id === 329710942260822017){ //Kullanabilen kisinin idsi
-} else {
-msg.channel.send(`Sadece sahibim bu komutu kullanabilir`); //Uyari
-};
+member.roles.has('<@567370793013608449>');
+// returns true if the member has the role
+
+member.roles.some(role => role.name === '(¯`•._.•[ Moderator ]•._.•´¯)');
+// returns true if any of the member's roles is exactly named "Mod"
 
 module.exports.help = {
     name: "mesajyolla"
