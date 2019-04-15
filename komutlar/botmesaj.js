@@ -17,6 +17,11 @@ module.exports.run = async (client, msg, args) => {
     });
 }
 
+exports.conf = {
+  enabled: true,
+  permLevel: 2,
+};
+
 module.exports.help = {
     name: "mesajyolla"
 }
