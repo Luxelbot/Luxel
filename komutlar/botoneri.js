@@ -34,6 +34,6 @@ exports.conf = {
 
 exports.help = {
   name: 'öneri', 
-  description: "bot hakkýndaki önerilerinizi bot sahiplerine ulaþtýrýr", 
+  description: "bot hakkindaki önerilerinizi bot sahiplerine ulastirir!", 
   usage: 'öneri <mesaj>' 
 };
