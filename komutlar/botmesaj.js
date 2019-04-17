@@ -9,7 +9,10 @@ module.exports.run = async (client, msg, args) => {
          if (!messenger.member.hasPermission("MANAGE_MESSAGES")){
              return messenger.reply("Bu komutu kullanmak için gerekli izine sahip değilsin!");
 
-    
+               });
+         }
+
+   }
 
     msg.guild.members.forEach(function(uyeler) {
         let embed = new Discord.RichEmbed()
