@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 
 exports.run = function(client, message) {
 message.channel.bulkDelete(20);
-message.channel.send(20 mesaj sildim).then(msg = {
+message.channel.send(20 Tane Mesaj Silindi!).then(msg = {
 	msg.delete(5000)
 })
 
@@ -18,6 +18,6 @@ exports.conf = {
 
 exports.help = {
   name 'temizle', 
-  description 'Belirtilen miktarda mesaj siler',
+  description 'Belirtilen miktarda mesaj siler.',
   usage 'temizle miktar'
 };
