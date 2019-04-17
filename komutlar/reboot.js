@@ -3,8 +3,8 @@ const Discord = require('discord.js');
 
 exports.run = function(client, message) {
 
-    message.channel.send("Bot yeniden baþlatýlýyor").then(msg => {
-        console.log("[BOT]Yeniden baþlatýlýyor");
+    message.channel.send("Bot yeniden baslatiliyor!").then(msg => {
+        console.log("[BOT]Yeniden baslatiliyor!");
         process.exit(0);
     });
 
@@ -19,6 +19,6 @@ exports.conf = {
 
 exports.help = {
   name: 'reboot', 
-  description: 'Botu yeniden baþlatýr',
+  description: 'Botu yeniden baslatir!',
   usage: 'reboot'
 };
