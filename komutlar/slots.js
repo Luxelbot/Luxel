@@ -1,5 +1,5 @@
 ﻿const Discord = require('discord.js');
-const { Command } = require('discord.js-commando');
+const { Command } = require('discord.js');
 const { stripIndents } = require('common-tags');
 const slots = ['🍇', '🍊', '🍐', '🍒', '🍋'];
 
