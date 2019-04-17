@@ -8,24 +8,24 @@ exports.run = (client, message, args) => {
   .setColor(0xFF0000)
   .setTimestamp()
   .setAuthor(message.author.username, message.author.avatarURL)
-  .addField(':warning: Uyarý :warning:', '`unban` adlý komutu özel mesajlarda kullanamazsýn.')
+  .addField(':warning: Uyari :warning:', '`unban` adli komutu Ã¶zel mesajlarda kullanamazsin.')
   return message.author.send(ozelmesajuyari); }
   let guild = message.guild
   let reason = args.slice(1).join(' ');
   client.unbanReason = reason;
   client.unbanAuth = message.author;
   let user = args[0];
-  let modlog = guild.channels.find('name', 'ceza-takip-listesi');
-  if (!modlog) return message.reply('`ceza-takip-listesi` kanalýný bulamýyorum.');
-  if (reason.length < 1) return message.reply('Ban kaldýrma sebebini yazmalýsýn.');
-  if (!user) return message.reply('Baný kaldýrýlacak kiþinin ID numarasýný yazmalýsýn.').catch(console.error);
+  let modlog = guild.channels.find('name', 'ðŸ”¥â”‚banlananlar');
+  if (!modlog) return message.reply('`ðŸ”¥â”‚banlananlar` kanalini bulamiyorum.');
+  if (reason.length < 1) return message.reply('Ban kaldirma sebebini yazmalisin.');
+  if (!user) return message.reply('Bani kaldirilacak kisinin ID numarasini yazmalisin.').catch(console.error);
   message.guild.unban(user);
 
   const embed = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .setTimestamp()
-    .addField('Eylem:', 'Ban kaldýrma')
-    .addField('Kullanýcý:', `${user.username}#${user.discriminator} (${user.id})`)
+    .addField('Eylem:', 'Ban kaldirma')
+    .addField('KullanÃ½cÃ½:', `${user.username}#${user.discriminator} (${user.id})`)
     .addField('Yetkili:', `${message.author.username}#${message.author.discriminator}`)
     .addField('Sebep', reason);
   return guild.channels.get(modlog.id).send(embed);
@@ -40,6 +40,6 @@ exports.conf = {
 
 exports.help = {
   name: 'unban',
-  description: 'Ýstediðiniz kiþinin banýný kaldýrýr.',
-  usage: 'unban [kullanýcý] [sebep]'
+  description: 'Istediginiz kisinin banini kaldirir.',
+  usage: 'unban [kullanci] [sebep]'
 };
