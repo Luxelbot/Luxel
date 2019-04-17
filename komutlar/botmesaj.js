@@ -18,6 +18,13 @@ module.exports.run = async (client, msg, args) => {
     });
 }
 
+exports.conf = {
+  enabled: true, 
+  guildOnly: false, 
+  aliases: [],
+  permLevel: 3 
+};
+
 module.exports.help = {
     name: "mesajyolla"
 }
