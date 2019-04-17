@@ -4,8 +4,8 @@ const Discord = require('discord.js');
 exports.run = function(client, message, args) {
 
 	var öneri = args.slice(0).join(' ');
-	var guildID = "459698010473889813";
-	var channelID = "484779276114067467";
+	var guildID = "489143321080496138";
+	var channelID = "561460411409629199";
 	
 	if (!öneri){
 		return message.reply("Bir mesaj belirtin! Doðru kullaným: **?öneri <mesaj>**");
@@ -19,7 +19,7 @@ exports.run = function(client, message, args) {
 			.addField("Öneri", öneri)
 		
 		client.guilds.get(guildID).channels.get(channelID).send(embed);
-		message.channel.send("Öneriniz alýnmýþtýr! Teþekkür ederiz.");
+		message.channel.send("Öneriniz alinmistr! Tesekkür ederiz.");
 	};
 
 
