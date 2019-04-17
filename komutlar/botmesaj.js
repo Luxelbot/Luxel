@@ -21,7 +21,7 @@ module.exports.run = async (client, msg, args) => {
 
 if (!msg.member.hasPermission("MANAGE_MESSAGES")){
         return msg.reply("Bu komutu kullanmak için gerekli izine sahip değilsin!");
-};
+}
 
 module.exports.help = {
     name: "mesajyolla"
