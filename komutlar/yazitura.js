@@ -13,11 +13,11 @@ exports.run = function(client, message) {
 	
 	if (cevap === "YAZI-TURA:__YAZI__**") {
 		
-		 const embedyazý = new Discord.RichEmbed()
+		 const embedyazÃ½ = new Discord.RichEmbed()
 		.setColor(0xf4b942)
 		.setDescription(cevap)
 		.setThumbnail("http://www.freakonomics.com/wp-content/uploads/2013/01/coin-300x218.jpg")
-		message.channel.send(embedyazý);
+		message.channel.send(embedyazi);
 		
 	} else if (cevap === "YAZI-TURA:__TURA__**") {
 		
@@ -40,7 +40,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'yazýtura', 
-  description: 'Yazý-Tura atar.',
-  usage: 'yazýtura'
+  name: 'yazitura', 
+  description: 'Yazi-Tura atar.',
+  usage: 'yazitura'
 };
