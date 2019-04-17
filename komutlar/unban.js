@@ -31,12 +31,9 @@ exports.run = (client, message, args) => {
   return guild.channels.get(modlog.id).send(embed);
 };
 
-exports.conf = {
-  enabled: true,
-  guildOnly: true,
-  aliases: [],
-  permLevel: 2
-};
+ if (!msg.member.hasPermission("MANAGE_MESSAGES")){
+        return msg.reply("Bu komutu kullanmak için gerekli izine sahip değilsin!");
+ }
 
 exports.help = {
   name: 'unban',
