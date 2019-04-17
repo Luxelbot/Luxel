@@ -4,8 +4,8 @@ module.exports.run = async (client, msg, args) => {
 
     let mesaj = args.join(" ");
     if(mesaj == null) return msg.channel.send("Bir mesaj giriniz.");
-    }
-    else {
+
+   } else {
          if (!messenger.member.hasPermission("MANAGE_MESSAGES")){
              return messenger.reply("Bu komutu kullanmak için gerekli izine sahip değilsin!");
 
