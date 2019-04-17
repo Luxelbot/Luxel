@@ -1,5 +1,4 @@
 const { Client } = require('discord.js');
-const yt = require('ytdl-core');
 const client = new Discord.Client();
 const ayar = require("./ayar.json");
 const fs = require("fs");
