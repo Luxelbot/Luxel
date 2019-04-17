@@ -1,5 +1,4 @@
 const { Client } = require('discord.js');
-const YouTube = require('simple-youtube-api');
 const yt = require('ytdl-core');
 const client = new Discord.Client();
 const ayar = require("./ayar.json");
