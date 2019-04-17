@@ -1,2 +1,2 @@
 worker node bot.js
-npm install youtube-data-api
+npm install simple-youtube-api
