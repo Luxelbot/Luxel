@@ -67,7 +67,6 @@ client.on('message', msg => {
 client.on('message', msg => {
   if (msg.content === 'l!yetkili') {
     msg.reply('```l!temizle Yazılan Mesajları Siler.```
-              ```l!unban Banlanan Kişilerin Banını Kaldırır.```
               ```l!unban Banlanan Kişilerin Banını Kaldırır.```');
   }
     
