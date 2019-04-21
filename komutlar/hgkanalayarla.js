@@ -1,6 +1,4 @@
 const Discord = require('discord.js')
-const fs = require('fs');
-let kanal = JSON.parse(fs.readFileSync("././sunucuyaözelayarlar/glog.json", "utf8"));
 
 exports.run = async (client, message, args) => {
 if (!message.member.hasPermission("ADMINISTRATOR")) return message.reply(`Bu komutu kullanabilmek için **Yönetici** iznine sahip olmalısın!`);
