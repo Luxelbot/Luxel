@@ -34,8 +34,6 @@ exports.run = async (bot, message, args) =>
 
 }
 
-
-
 exports.conf =
 {
   enabled: true,
