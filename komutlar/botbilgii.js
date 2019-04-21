@@ -2,7 +2,6 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 exports.run = (client, message) => {
-    const duration = moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]");
 	const istatistikozel = new Discord.RichEmbed()
     .setColor(0x36393F)
 .setDescription("LuxelBot İstatistik")
