@@ -1,6 +1,4 @@
 const Discord = require('discord.js');
-const fs = require('fs');
-let küfürEngel = JSON.parse(fs.readFileSync("././jsonlar/küfürEngelle.json", "utf8"));
 
 exports.run = async (client, message) => {
   
