@@ -1,5 +1,4 @@
 const Discord = require('discord.js')
-const fs = require('fs')
 
 exports.run = async (client, message, args) => {
   	let sunucuyaözelayarlarOtorol = JSON.parse(fs.readFileSync("./autorole.json", "utf8"));
