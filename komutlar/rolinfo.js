@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const superagent = require("superagent");
 module.exports.run = async (client,message,args) => {
   var rol = message.content.split(" ").slice(1).join(" ");
   let role = message.guild.roles.find("name", `${rol}`)
