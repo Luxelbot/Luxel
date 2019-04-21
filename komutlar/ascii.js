@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const Jimp = require('jimp'); 
 
 exports.run = (client, message, args) => {
     var figlet = require('figlet');
