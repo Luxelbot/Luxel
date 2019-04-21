@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const ascii = require('figlet');
 
 exports.run = function(client, message, args) {
 
