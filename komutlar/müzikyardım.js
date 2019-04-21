@@ -1,7 +1,5 @@
 const Discord = require('discord.js');
 
-var prefix = ayar.prefix;
-
 exports.run = (client, message, params) => {
   const müzik = new Discord.RichEmbed()
   .setDescription('')
