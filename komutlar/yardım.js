@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-var prefix = loglar.prefix;
+var prefix = ayar.prefix;
 
 exports.run = async (client, message, params, args) => {
 
