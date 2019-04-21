@@ -1,8 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const moment = require("moment");
-require("moment-duration-format");
-
 
 exports.run = (client, message) => {
     const duration = moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]");
