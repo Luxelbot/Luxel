@@ -1,7 +1,5 @@
 const Discord = require('discord.js');
 
-var prefix = loglar.prefix;
-
 exports.run = (client, message, params) => {
   if (!params[0]) {
     const commandNames = Array.from(client.commands.keys());
