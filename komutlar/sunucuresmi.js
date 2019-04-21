@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const loglar = require('../loglar.json');
 
 exports.run = (client, message, params) => {
 	if (!message.guild) {
