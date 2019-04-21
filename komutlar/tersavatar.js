@@ -1,4 +1,3 @@
-var Jimp = require('jimp');
 
 let using = false;
 
