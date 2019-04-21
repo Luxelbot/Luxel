@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 
 exports.run = (client, message, args) => { 
-    var Jimp = require("jimp");
     const Discord = require('discord.js');
     let img    = Jimp.read(message.mentions.users.first() ? message.mentions.users.first().avatarURL : message.author.avatarURL),
     moldura = Jimp.read("https://cdn.discordapp.com/attachments/484692865985806346/487849021658890240/image0.png");
