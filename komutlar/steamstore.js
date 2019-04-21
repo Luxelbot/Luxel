@@ -1,5 +1,4 @@
 const Discord = require('discord.js')
-var steam = require('steam-provider')
 var provider = new steam.SteamProvider();
 
 exports.run = (client, message, args) => {
