@@ -6,7 +6,7 @@ exports.run = (client, message) => {
 	const istatistikozel = new Discord.RichEmbed()
     .setColor(0x36393F)
 .setDescription("LuxelBot İstatistik")
-  .addField(` Bot Sahipleri:`, `<@431772260508893194> ve <@481412397895122963>`, true)
+  .addField(` Bot Sahipleri:`, `<@329710942260822017>`, true)
   .addField('<:evettt:509812460400803840> Shard:', '1/1', true)
 	.addField("<:bot:500384574786764800> Bellek Kullanımı:", `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`, true)
   .addField("<:botbilgi:509809947593408524> Sunucu Sayısı:", `${client.guilds.size.toLocaleString()}`, true)
