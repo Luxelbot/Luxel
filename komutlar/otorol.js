@@ -23,7 +23,7 @@ exports.run = async (bot, message, args) =>
 	
 		console.log(err)
 
-	})
+	}
 
 	const embed = new Discord.RichEmbed()
 		.setDescription(`<:evett:495950668725747733>  Otorol başarıyla ${args[0]} olarak ayarlandı! \n<:evett:495950668725747733>  Otorol Mesaj kanalı başarıyla ${mentionedChannel} olarak ayarlandı`)
