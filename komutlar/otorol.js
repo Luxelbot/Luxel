@@ -1,8 +1,3 @@
-const fs = require ('fs')
-const Discord = require('discord.js')
-var sunucuyaözelayarlarOtorol = JSON.parse(fs.readFileSync("./autorole.json", "utf8"));
-
-
 exports.run = async (bot, message, args) =>
 {
   	let profil = JSON.parse(fs.readFileSync("./autorole.json", "utf8"));
