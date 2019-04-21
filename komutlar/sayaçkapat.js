@@ -1,5 +1,4 @@
 const Discord = require('discord.js')
-const fs = require('fs')
 
 exports.run = async (client, message, args) => {
 	let profil = JSON.parse(fs.readFileSync("./ayarlar/sayac.json", "utf8"));
