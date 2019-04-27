@@ -18,7 +18,7 @@ exports.run = (client, message, params) => {
     .setImage(`https://cdn.boob.bot/Gifs/19A0.gif`)
     .setImage(`https://cdn.boob.bot/Gifs/1949.gif`)
     return message.channel.send(rando_imgs);
-    file: rando_imgs[Math.floor(Math.random() * rando_imgs.length)];
+    embed = rando_imgs[Math.floor(Math.random() * rando_imgs.length)];
     }
 };
 
