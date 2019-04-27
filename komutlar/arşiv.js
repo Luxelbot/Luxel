@@ -16,7 +16,7 @@ exports.run = (client, message, params) => {
 	    `https://cdn.boob.bot/Gifs/19A0.gif`,
 	    `https://cdn.boob.bot/Gifs/1949.gif`,
 	    ]
-    return message.channel.send(rando_imgs);
+    message.channel.send(`${message.author} gave ${member} a hug!`, {
     file: rando_imgs[Math.floor(Math.random() * rando_imgs.length)]
     }
 };
