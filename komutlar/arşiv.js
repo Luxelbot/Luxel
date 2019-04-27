@@ -14,7 +14,16 @@ exports.run = (client, message, params) => {
     .setColor('RANDOM')
     .setTimestamp()
     .setImage(`https://cdn.boob.bot/Gifs/165C.gif','https://cdn.boob.bot/Gifs/19A0.gif`)
+      
+     const rando_imgs = new Discord.RichEmbed()
+    .setAuthor('Nasıl Beğendin mi?')
+    .setColor('RANDOM')
+    .setTimestamp()
+    'https://https://cdn.boob.bot/Gifs/165C.gif',
+    'https://cdn.boob.bot/Gifs/19A0.gif',
+    'https://cdn.boob.bot/Gifs/1949.gif'
     return message.channel.send(sunucubilgi);
+    file: rando_imgs[Math.floor(Math.random() * rando_imgs.length)
     }
 };
 
