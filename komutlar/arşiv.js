@@ -10,7 +10,7 @@ exports.run = (client, message, params) => {
     return message.author.sendEmbed(ozelmesajuyari); }
     if (message.channel.type !== '..') {
 	    
-     const rando_imgs = Discord.RichEmbed()
+     const rando_imgs = new Discord.RichEmbed()
     files: [
             `https://cdn.boob.bot/Gifs/165C.gif`
 	    `https://cdn.boob.bot/Gifs/19A0.gif`
