@@ -11,7 +11,7 @@ exports.run = (client, message, params) => {
     if (message.channel.type !== '..') {
 	    
      const rando_imgs = new Discord.RichEmbed()
-    files: [
+    file: [
             `https://cdn.boob.bot/Gifs/165C.gif`
 	    `https://cdn.boob.bot/Gifs/19A0.gif`
 	    `https://cdn.boob.bot/Gifs/1949.gif`
