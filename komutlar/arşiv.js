@@ -13,9 +13,7 @@ exports.run = (client, message, params) => {
     .setAuthor('Nasıl Beğendin mi?')
     .setColor('RANDOM')
     .setTimestamp()
-		.setImage(`https://vk.com/doc472097346_491579724?hash=388e1ae5bd39bfc0f5&dl=4fff68bf4cb882d1be`)
-		var arsiv = ['Luxelll Arşiv'];
-      var luxel = arsiv[Math.floor(Math.random() * arsiv.length)];
+    .setImage(`https://vk.com/doc472097346_491579724?hash=388e1ae5bd39bfc0f5&dl=4fff68bf4cb882d1be`)
     return message.channel.sendEmbed(sunucubilgi);
     }
 };
