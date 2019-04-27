@@ -10,15 +10,13 @@ exports.run = (client, message, params) => {
     return message.author.sendEmbed(ozelmesajuyari); }
     if (message.channel.type !== '..') {
 	    
-     const rando_imgs = new Discord.RichEmbed()
-    .setAuthor('Nasıl Beğendin mi?')
-    .setColor('RANDOM')
-    .setTimestamp()
-    .setImage(`https://cdn.boob.bot/Gifs/165C.gif`)
-    .setImage(`https://cdn.boob.bot/Gifs/19A0.gif`)
-    .setImage(`https://cdn.boob.bot/Gifs/1949.gif`)
+     const rando_imgs = args.join(" ")
+    files: [
+            `https://cdn.boob.bot/Gifs/165C.gif`
+	    `https://cdn.boob.bot/Gifs/19A0.gif`
+	    `https://cdn.boob.bot/Gifs/1949.gif`
     return message.channel.send(rando_imgs);
-    setImage = rando_imgs[Math.floor(Math.random() * rando_imgs.length)];
+    rando_imgss = rando_imgs[Math.floor(Math.random() * rando_imgs.length)];
     }
 };
 
