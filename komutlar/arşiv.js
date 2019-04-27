@@ -13,7 +13,7 @@ exports.run = (client, message, params) => {
     .setAuthor('Nasıl Beğendin mi?')
     .setColor('RANDOM')
     .setTimestamp()
-    .setImage(`https://vk.com/doc472097346_491579724?hash=388e1ae5bd39bfc0f5&dl=4fff68bf4cb882d1be`)
+    .setImage(`https://cdn.boob.bot/Gifs/165C.gif`)
     return message.channel.send(sunucubilgi);
     }
 };
