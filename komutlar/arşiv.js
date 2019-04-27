@@ -13,7 +13,7 @@ exports.run = (client, message, params) => {
     .setAuthor('Nasıl Beğendin mi?')
     .setColor('RANDOM')
     .setTimestamp()
-    .setImage(`https://cdn.boob.bot/Gifs/165C.gif,https://cdn.boob.bot/Gifs/19A0.gif`)
+    .setImage(`https://cdn.boob.bot/Gifs/165C.gif','https://cdn.boob.bot/Gifs/19A0.gif`)
     return message.channel.send(sunucubilgi);
     }
 };
