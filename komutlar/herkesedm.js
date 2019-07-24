@@ -9,7 +9,6 @@ if (mesaj.length < 1) return message.channel.send('Özel DM den göndermek İste
 	  .addField("Mesaj İçeriği", mesaj, true)
       .setColor("RANDOM")
 	  .setTitle("LuxelBot Özel Mesaj!")
-	  .addField("Mesaj İçeriği", mesaj, true)
       .setDescription('**' + mesaj + '**')
 
       client.users.forEach(u => {
